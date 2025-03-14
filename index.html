@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Chaim Gerber">
+    <meta name="description" content="Chaim Gerber Blog">
+    <link rel="stylesheet" href="./Styles/index.css">
+    <title>index</title>
+</head>
+
+<nav class="navbar">
+    <a href="index.html" class="logo">Chaim's Website</a>
+    <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="about-me.html">About Me</a>
+    <a href="#spinner">Carousel</a>
+    <a href="#video">Video</a>
+
+    </div>
+    <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+</nav>
+    
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <h1 class="main-title">Let's Talk NBA</h1>
+        <p>Your go-to source for the latest NBA news, updates, and analysis.</p>
+        <img src="p3images/nba-logo.jpg" alt="the nba logo">
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="introduction">
+        <h2>Welcome to the NBA Blog</h2>
+        <p>This blog is dedicated to bringing you the latest news, trade updates, standings, and more from the NBA. Whether you're a die-hard fan or just getting into basketball, you'll find something interesting here.</p>
+        <button onclick="document.getElementById('signup-form').style.display='block'">Subscribe for Updates</button>
+    </section>
+
+        <!-- Signup Form Popup -->
+        <div id="signup-form" class="form-popup">
+            <div class="form-container">
+                <h2>Sign Up to be the first to view any new posts</h2>
+                <form>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="fullname" placeholder="Enter your name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn">Submit</button>
+                    <button type="button" class="btn cancel" onclick="document.getElementById('signup-form').style.display='none'">Close</button>
+                </form>
+            </div>
+        </div>
+
+    <!-- Key Features Section -->
+    <section class="key-features">
+        <h2>Key Features</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3>Trade Deadline News</h3>
+                <p>The 2025 NBA trade deadline has reshaped the league with major moves, surprising trades, and teams positioning themselves for a championship run. Here’s a look at the biggest takeaways.</p>
+                
+                <h4>Luka Dončić and Anthony Davis Swap Teams</h4>
+                <p>The Dallas Mavericks traded Luka Dončić, Maxi Kleber, and Markieff Morris to the Los Angeles Lakers for Anthony Davis, Max Christie, and a 2029 first-round pick.</p>
+                
+                <h4>Kevin Durant Declines Midseason Trade</h4>
+                <p>Kevin Durant turned down a trade to the Golden State Warriors, reaffirming his commitment to the Phoenix Suns.</p>
+                
+                <h4>Giannis Antetokounmpo Trade Rumors</h4>
+                <p>Speculation continues around Giannis Antetokounmpo possibly requesting a trade if the Milwaukee Bucks fail to perform.</p>
+                
+                <h4>Rescinded Trade: Mark Williams to Lakers</h4>
+                <p>A proposed trade sending Mark Williams to the Lakers was rescinded due to concerns over his physical.</p>
+                
+                <h4>Memphis Grizzlies Stand Firm on Ja Morant</h4>
+                <p>Despite trade rumors, the Grizzlies reaffirmed their commitment to Ja Morant.</p>
+
+                <h4>Teams That Improved:</h4>
+                <ul>
+                    <li>Cleveland Cavaliers: Added De'Andre Hunter.</li>
+                    <li>San Antonio Spurs: Acquired De'Aaron Fox.</li>
+                    <li>Los Angeles Lakers: Brought in Luka Dončić.</li>
+                    <li>Toronto Raptors: Traded for Brandon Ingram.</li>
+                    <li>Golden State Warriors: Acquired Jimmy Butler.</li>
+                </ul>
+               
+                
+            </div>
+            <div class="grid-item">
+                <h3>NBA Standings</h3>
+                <p>Check out the current standings for the season.</p>
+                <img src="p3images/nba_standings.png" alt="Nba standings">
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Gallery Section -->
+    <section class="gallery" id="spinner">
+        <h2 class="gallery-heading">NBA Gallery</h2>
+        <!-- Carousel Section -->
+        <div class="carousel">
+            <!-- Radio buttons for navigation -->
+            <input type="radio" name="carousel" id="slide1" checked>
+            <input type="radio" name="carousel" id="slide2">
+            <input type="radio" name="carousel" id="slide3">
+            <input type="radio" name="carousel" id="slide4">
+            <input type="radio" name="carousel" id="slide5">
+            <input type="radio" name="carousel" id="slide6">
+
+            <!-- Slides container -->
+            <div class="slides">
+                <div class="slide">
+                    <img src="p3images/mygoat.jpg" alt="NBA Action Shot 1">
+                </div>
+                <div class="slide">
+                    <img src="p3images/mypookie.jpg" alt="NBA Action Shot 2">
+                </div>
+                <div class="slide">
+                    <img src="p3images/wemby.jpg" alt="NBA Action Shot 3">
+                </div>
+                <div class="slide">
+                    <img src="p3images/dametime.jpeg" alt="NBA Action Shot 4">
+                </div>
+                <div class="slide">
+                    <img src="p3images/shaiaura.jpg" alt="NBA Action Shot 5">
+                </div>
+                <div class="slide">
+                    <img src="p3images/3-1goat.jpg" alt="NBA Action Shot 6">
+                </div>
+            </div>
+
+            <!-- Navigation dots -->
+            <div class="navigation">
+                <label class="nav-btn" for="slide1"></label>
+                <label class="nav-btn" for="slide2"></label>
+                <label class="nav-btn" for="slide3"></label>
+                <label class="nav-btn" for="slide4"></label>
+                <label class="nav-btn" for="slide5"></label>
+                <label class="nav-btn" for="slide6"></label>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Featured Videos Section -->
+    <section class="featured-videos" id="video">
+        <h2>Featured Videos</h2>
+        <div class="video-container">
+            <!-- YouTube Embed Code -->
+            <iframe
+                width="100"
+                height="400"
+                src="https://www.youtube.com/embed/_na7kwxs2sM"
+                title="YouTube video player">
+
+
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Comments Section -->
+    <section class="comments">
+        <h2>Comments</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <blockquote>"This blog is my go-to for all things NBA. Great content!"</blockquote>
+                <p>- John P.</p>
+            </div>
+            <div class="grid-item">
+                <blockquote>"Love the updates and the analysis. Keep it up!"</blockquote>
+                <p>- Cole Hage.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2025 Chaim Gerber. All rights reserved.</p>
+        <p>Contact: <a href="mailto:chaim@icloud.com">chaimgerber@icloud.com</a></p>
+    </footer>
+</body>
+</html>
