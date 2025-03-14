@@ -1,0 +1,156 @@
+/* General Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../Resume.images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333;
+}
+
+
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(44, 62, 80, 0); 
+    color: #2c3e50;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; 
+    margin-top: 20px;
+    flex-wrap: wrap; 
+}
+
+.image-container a {
+    display: inline-block;
+}
+
+.contact-icon {
+    width: 50px; 
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-icon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 20px 0;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background: rgba(21, 109, 36, 0.312); 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #34495e;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+ul {
+    list-style-type: disc;
+    margin: 10px 0 10px 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(44, 62, 80, 0.8); 
+    color: white;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em; 
+    }
+
+    header p {
+        font-size: 1em; 
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.6em; 
+    }
+
+    h3 {
+        font-size: 1.2em; 
+    }
+
+    .image-container {
+        flex-direction: column; 
+        align-items: center; 
+        gap: 1rem; 
+    }
+
+    .contact-icon {
+        width: 40px; 
+        height: 40px;
+    }
+
+    p {
+        font-size: 0.9em; 
+    }
+
+    ul {
+        margin-left: 15px; 
+    }
+
+    footer {
+        padding: 15px; 
+    }
+}
